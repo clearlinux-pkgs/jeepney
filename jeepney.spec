@@ -4,7 +4,7 @@
 #
 Name     : jeepney
 Version  : 0.4.2
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/47/ce/f32852260f93a5b25bbd30f013ce7df1f7df531ff2f4cbed54e726ce6c6f/jeepney-0.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/47/ce/f32852260f93a5b25bbd30f013ce7df1f7df531ff2f4cbed54e726ce6c6f/jeepney-0.4.2.tar.gz
 Summary  : Low-level, pure Python DBus protocol wrapper.
@@ -19,6 +19,13 @@ BuildRequires : buildreq-distutils3
 This is a low-level, pure Python DBus protocol client. It has an `I/O-free
 <https://sans-io.readthedocs.io/>`__ core, and integration modules for different
 event loops.
+
+DBus is an inter-process communication system, mainly used in Linux.
+
+`Jeepney docs on Readthedocs <https://jeepney.readthedocs.io/en/latest/>`__
+
+This project is experimental, and there are a
+number of `more mature Python DBus bindings <https://www.freedesktop.org/wiki/Software/DBusBindings/#python>`__.
 
 %package license
 Summary: license components for the jeepney package.
@@ -41,6 +48,7 @@ python components for the jeepney package.
 Summary: python3 components for the jeepney package.
 Group: Default
 Requires: python3-core
+Provides: pypi(jeepney)
 
 %description python3
 python3 components for the jeepney package.
@@ -55,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578154257
+export SOURCE_DATE_EPOCH=1583161050
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
