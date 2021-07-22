@@ -4,7 +4,7 @@
 #
 Name     : jeepney
 Version  : 0.7.0
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/8e/9b/72259ccc9c49cf830f60289c841d57a449d993f48de0df5e76b3f9d929ae/jeepney-0.7.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8e/9b/72259ccc9c49cf830f60289c841d57a449d993f48de0df5e76b3f9d929ae/jeepney-0.7.0.tar.gz
 Summary  : Low-level, pure Python DBus protocol wrapper.
